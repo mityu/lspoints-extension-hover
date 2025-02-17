@@ -1,0 +1,12 @@
+{
+  "importMap": "./import_map.json",
+  "lock": false,
+  "tasks": {
+    "check": "deno check --no-lock denops",
+    "lint": "deno lint denops",
+    "lint-fix": "deno lint --fix denops",
+    "fmt": "deno fmt denops",
+    "test": "deno test -A --doc --parallel --shuffle **/*.ts",
+    "upgrade": "deno run -A jsr:@molt/cli **/*.ts --write"
+  }
+}
